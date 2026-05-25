@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superalimentos - Transforma tu Salud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d2b1f 0%, #1a4d3e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #e8b042;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content .highlight {
+            color: #e8b042;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #d4d4d4;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .benefits-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefits-list li::before {
+            content: "✓";
+            color: #e8b042;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Price Box */
+        .price-box {
+            background: #e8b042;
+            color: #1a4d3e;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .price-box .old-price {
+            text-decoration: line-through;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .price-box .new-price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background: #0d2b1f;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s, background 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-comprar:hover {
+            background: #1a4d3e;
+            transform: scale(1.05);
+        }
+
+        /* Bonuses */
+        .bonuses {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .bonuses h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .bonus-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .bonus-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+
+        .bonus-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bonus-card span {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .bonus-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #b0b0b0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .benefits-list li {
+                justify-content: center;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ SUPERALIMENTOS ✨</h1>
+            <p>La guía definitiva para transformar tu salud desde adentro</p>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Descubre el poder de la <span class="highlight">naturaleza</span> para:</h2>
+                <ul class="benefits-list">
+                    <li>Perder peso de forma natural y sostenible</li>
+                    <li>Rejuvenecer tu piel y fortalecer tu cabello</li>
+                    <li>Proteger tu cerebro y prevenir el Alzheimer</li>
+                    <li>Fortalecer tu corazón y sistema inmunológico</li>
+                    <li>+60 superalimentos explicados en detalle</li>
+                </ul>
+                <div class="price-box">
+                    <span class="old-price">Precio regular: $67</span>
+                    <div class="new-price">🔥 SOLO $17 🔥</div>
+                    <div>⭐⭐⭐⭐⭐ (Oferta por tiempo limitado)</div>
+                    <a href="https://hotmart.com/es/clink/TU_ENLACE_AQUI" class="btn-comprar">¡QUIERO MI EBOOK AHORA!</a>
+                </div>
+                <p style="font-size:0.9rem; margin-top:10px;">✔️ Acceso inmediato ✔️ Formato digital ✔️ 5 productos en 1</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x400?text=Portada+Ebook" alt="Portada del Ebook Superalimentos">
+            </div>
+        </div>
+
+        <div class="bonuses">
+            <h3>🎁 BONOS EXCLUSIVOS INCLUIDOS 🎁</h3>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <span>📋</span>
+                    <h4>Checklist de 7 días</h4>
+                    <p>Plan paso a paso para empezar hoy</p>
+                </div>
+                <div class="bonus-card">
+                    <span>📖</span>
+                    <h4>10 Recetas rápidas</h4>
+                    <p>Deliciosas y nutritivas</p>
+                </div>
+                <div class="bonus-card">
+                    <span>🎓</span>
+                    <h4>3 Ebooks adicionales</h4>
+                    <p>Contenido extra de valor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Superalimentos. Todos los derechos reservados.</p>
+            <p>Este producto no reemplaza el consejo médico profesional.</p>
+        </div>
+    </div>
+</body>
+</html>
