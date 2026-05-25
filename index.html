@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Alimentos | Ebook</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7fff8;
+        --primary: #1f8a4c;
+        --primary-dark: #146234;
+        --text: #1d2a1f;
+        --muted: #56705b;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      header {
+        background: linear-gradient(140deg, #e8ffe9 0%, #f7fff8 100%);
+        border-bottom: 1px solid #d8f2dc;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1rem;
+        padding: 3.5rem 0 3rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 3rem);
+      }
+
+      .tagline {
+        margin: 0;
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid #dcf1df;
+        border-radius: 12px;
+        padding: 1.2rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 0.75rem;
+        background: var(--primary);
+        color: #fff;
+        text-decoration: none;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        font-weight: 700;
+      }
+
+      .button:hover {
+        background: var(--primary-dark);
+      }
+
+      main {
+        padding: 2rem 0 3rem;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 760px) {
+        .hero {
+          grid-template-columns: 1.3fr 1fr;
+          align-items: center;
+        }
+
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 1.2rem 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container hero">
+        <div>
+          <p><strong>Ebook digital</strong></p>
+          <h1>Super Alimentos</h1>
+          <p class="tagline">
+            Descubre cómo mejorar tu energía, digestión y bienestar con una guía
+            práctica sobre los alimentos más nutritivos.
+          </p>
+        </div>
+        <aside class="card">
+          <p class="price">USD 19</p>
+          <p>Acceso inmediato en PDF + bonos exclusivos.</p>
+          <a class="button" href="#comprar">Comprar ahora</a>
+        </aside>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>¿Qué encontrarás en este ebook?</h2>
+        <ul>
+          <li>Lista de super alimentos y sus beneficios comprobados.</li>
+          <li>Recetas fáciles para desayuno, almuerzo y cena.</li>
+          <li>Plan de 21 días para incorporar hábitos saludables.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ideal para ti si...</h2>
+        <div class="grid">
+          <article class="card">Quieres comer mejor sin dietas extremas.</article>
+          <article class="card">Buscas opciones prácticas para tu rutina.</article>
+          <article class="card">Te interesa cuidar tu salud a largo plazo.</article>
+        </div>
+      </section>
+
+      <section id="comprar" class="card">
+        <h2>Llévate Super Alimentos hoy</h2>
+        <p>
+          Haz clic en el botón para recibir tu ebook al instante y comenzar tu
+          transformación.
+        </p>
+        <a class="button" href="mailto:ventas@superalimentos.com?subject=Quiero%20comprar%20el%20ebook%20Super%20Alimentos">Finalizar compra</a>
+      </section>
+    </main>
+
+    <footer>© 2026 Super Alimentos. Todos los derechos reservados.</footer>
+  </body>
+</html>
